@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:id="@+id/activity_room_chat"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DAA520"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/TitleRoomChat"
+        android:clickable="true"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icongroup"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNamaTipeRoomChat"
+            android:textColor="#000000"
+            android:textStyle="bold|italic"
+            android:textSize="23dp"
+            android:gravity="left"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:dividerHeight="16dp"
+        android:divider="@android:color/transparent"
+        android:id="@+id/listPesan"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="55dp"
+        >
+    </ListView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editInputPesan"
+            android:background="#ffffff"
+            android:layout_marginRight="5dp"
+            android:layout_alignTop="@+id/btnKirimPesan"
+            android:layout_alignBottom="@+id/btnKirimPesan"
+            android:layout_toLeftOf="@+id/btnKirimPesan"
+            android:layout_alignParentBottom="true"
+            android:hint="masukkan pesan disini"
+            android:textSize="15dp"
+            android:gravity="center"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:id="@+id/btnKirimPesan"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#ffffff"
+            android:text="KIRIM"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+</RelativeLayout>

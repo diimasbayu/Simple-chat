@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:id="@+id/activity_login_walikelas"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="31dp"
+            android:text="LOGIN SEBAGAI WALI KELAS"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/txtJudul4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtJudul5"
+            android:text="MASUKKAN NOMOR INDUK PEGAWAI"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/txtJudul4"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editLoginWaliKelasNoInduk"
+            android:background="#ffffff"
+            android:hint="masukkan nomor induk pegawai"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_below="@+id/txtJudul5"
+            android:layout_alignParentStart="true"
+            android:paddingTop="10dp"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="numberDecimal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtJudul6"
+            android:text="MASUKKAN PASSWORD"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_below="@+id/editLoginWaliKelasNoInduk"
+            android:layout_marginTop="30dp"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editLoginWaliKelasPass"
+            android:background="#ffffff"
+            android:hint="masukkan password "
+            android:textSize="20dp"
+            android:inputType="textVisiblePassword"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:layout_below="@+id/txtJudul6"
+            android:layout_alignParentStart="true"
+
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLoginWaliKelas_2"
+            android:text="LOGIN"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#ffffff"
+            android:layout_marginTop="52dp"
+            android:layout_below="@+id/editLoginWaliKelasPass"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:id="@+id/activity_daftar_walikelas"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DAFTAR SEBAGAI WALI KELAS"
+            android:textSize="31dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/txtjudul10"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MASUKKAN NOMOR INDUK PEGAWAI"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginTop="25dp"
+            android:id="@+id/txtJudul11"
+            android:layout_below="@+id/txtjudul10"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="masukkan nomor induk pegawai"
+            android:textSize="20dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtJudul11"
+            android:id="@+id/editDaftarWaliKelasNoInduk"
+            android:inputType="numberDecimal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MASUKKAN NAMA LENGKAP"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginTop="25dp"
+            android:id="@+id/txtJudul12"
+            android:layout_below="@+id/editDaftarWaliKelasNoInduk"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="masukkan nama lengkap"
+            android:textSize="20dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/editDaftarWaliKelasNama"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtJudul12"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MASUKKAN PASSWORD"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginTop="25dp"
+            android:id="@+id/txtJudul13"
+            android:layout_below="@+id/editDaftarWaliKelasNama"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="masukkan password"
+            android:textSize="20dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/editDaftarWaliKelasPass"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtJudul13"
+            android:inputType="textVisiblePassword"
+            />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editDaftarWaliKelasPass"
+            android:id="@+id/chkEulaWaliKelas"
+            android:layout_marginTop="20dp"
+            android:text="Saya sudah membaca eula dan menyetujuinya"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEula_walikelas"
+            android:layout_below="@+id/chkEulaWaliKelas"
+            android:layout_marginTop="20dp"
+            android:text="Mohon baca : EULA disini"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:clickable="true"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDaftarWaliKelas_2"
+            android:text="BERIKUTNYA"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#ffffff"
+            android:layout_marginTop="52dp"
+            android:layout_below="@+id/txtEula_walikelas"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</ScrollView>
+
